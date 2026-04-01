@@ -1,0 +1,21 @@
+# Configuration for mini-SWE-agent with vLLM integration
+
+model:
+  model_class: "integration.vllm_integration.VLLMModel"
+  model_name: "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+  vllm_server_url: "http://localhost:8000"
+  timeout: 300
+  max_retries: 3
+
+agent:
+  agent_class: "interactive"
+  mode: "yolo"  # Run without confirmation
+  cost_limit: 0  # Disable cost limit for local vLLM
+  confirm_exit: false
+
+environment:
+  environment_class: "local"
+
+run:
+  # This will be set by command line or interactive input
+  task: null

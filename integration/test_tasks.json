@@ -1,0 +1,22 @@
+[
+  "Write a Python function to implement binary search.",
+  "Create a JavaScript function that validates an email address.",
+  "Implement a quick sort algorithm in Python.",
+  "Write a function to reverse a linked list in Python.",
+  "Create a Python class for a simple calculator with add, subtract, multiply, and divide methods.",
+  "Implement a function to check if a string is a palindrome.",
+  "Write a Python function to find the factorial of a number using recursion.",
+  "Create a function to merge two sorted arrays into one sorted array.",
+  "Implement a stack data structure in Python with push, pop, and peek methods.",
+  "Write a function to find the longest common prefix among an array of strings.",
+  "Create a Python decorator that measures execution time of functions.",
+  "Implement a binary tree traversal (in-order, pre-order, post-order) in Python.",
+  "Write a function to detect cycles in a linked list.",
+  "Create a Python context manager for file handling.",
+  "Implement a hash table with collision resolution in Python.",
+  "Write a function to generate all permutations of a string.",
+  "Create a Python generator that yields Fibonacci numbers.",
+  "Implement a priority queue using a heap in Python.",
+  "Write a function to solve the N-Queens problem.",
+  "Create a Python class for handling HTTP requests with retry logic."
+]
