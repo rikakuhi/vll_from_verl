@@ -27,7 +27,9 @@ pip install -r requirements.txt
 
 ## 使用方法
 
-### 基本用法
+> **重要提示**：为了准确复现 VERL 中的 vLLM 启动行为并调试问题，**强烈推荐使用命令行方式（`python launch_vllm.py`）**，因为这种方式与 VERL 原生启动 vLLM 服务的方法完全一致，包括相同的参数解析、CLI 调用和服务器初始化流程。
+
+### 基本用法（推荐 ✅）
 
 ```bash
 python launch_vllm.py <模型路径或HuggingFace模型ID>
@@ -38,7 +40,7 @@ python launch_vllm.py <模型路径或HuggingFace模型ID>
 python launch_vllm.py meta-llama/Llama-3.1-8B-Instruct
 ```
 
-### 高级配置
+### 高级配置（推荐 ✅）
 
 服务器支持 VERL `rollout.yaml` 中的所有配置选项：
 
@@ -51,9 +53,9 @@ python launch_vllm.py meta-llama/Llama-3.1-8B-Instruct \
     --enable-lora
 ```
 
-### 编程式使用
+### 编程式使用（不推荐用于调试 ❌）
 
-您也可以通过编程方式使用服务器：
+您也可以通过编程方式使用服务器，但**这种方式与 VERL 的启动流程不完全一致**，因为绕过了 vLLM 的官方 CLI 参数解析：
 
 ```python
 from vllm_server import StandaloneVLLMServer, VLLMServerConfig
